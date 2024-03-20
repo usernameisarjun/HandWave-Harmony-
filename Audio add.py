@@ -81,7 +81,7 @@ class AudioRecorderApp:
         while self.recording:
             ret, frame = cap.read()
             if ret:
-                # Display camera feed (you can customize this part according to your requirements)
+                
                 cv2.imshow('Camera Feed', frame)
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
